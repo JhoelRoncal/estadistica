@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="surveyForm">
+    <form id="surveyForm" action="https://formsubmit.co/jhoelroncal@hotmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://tu-dominio.com/gracias.html"> <!-- Redirigir a esta URL después del envío -->
+        <input type="hidden" name="_captcha" value="false"> <!-- Desactivar captcha si necesario -->
+        <input type="hidden" name="email" value="jhoelroncal@hotmail.com"> <!-- Correo electrónico oculto para recibir respuestas -->
+
         <img src="https://github.com/JhoelRoncal/estadistica/blob/main/imagen.jpg?raw=true" alt="Imagen descriptiva" class="header-image">
         <h1>Encuesta sobre Fraudes Piramidales</h1>
 
         <div class="question" id="question1">
             <label>¿Ha sido contactado alguna vez por una organización o individuo ofreciéndole una oportunidad de inversión que parece ser demasiado buena para ser verdad?</label>
-            <select>
+            <select name="pregunta1">
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
@@ -22,7 +26,7 @@
 
         <div class="question hidden" id="question2">
             <label>¿Conoce los signos de advertencia de una estafa piramidal?</label>
-            <select>
+            <select name="pregunta2">
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
@@ -31,7 +35,7 @@
 
         <div class="question hidden" id="question3">
             <label>¿Ha invertido dinero en un programa que le prometió altos retornos en un corto período de tiempo?</label>
-            <select>
+            <select name="pregunta3">
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
@@ -40,7 +44,7 @@
 
         <div class="question hidden" id="question4">
             <label>¿Le han pedido reclutar a más personas para aumentar su potencial de ganancia en alguna inversión?</label>
-            <select>
+            <select name="pregunta4">
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
@@ -49,7 +53,7 @@
 
         <div class="question hidden" id="question5">
             <label>¿Cómo evaluaría su nivel de conocimiento sobre las inversiones legítimas en comparación con las estafas piramidales?</label>
-            <select>
+            <select name="pregunta5">
                 <option value="alto">Alto</option>
                 <option value="moderado">Moderado</option>
                 <option value="bajo">Bajo</option>
